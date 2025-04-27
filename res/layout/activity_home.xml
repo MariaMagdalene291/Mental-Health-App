@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_green"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize,UselessParent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            tools:ignore="ScrollViewCount">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Logo, Search Bar, and Cart Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Logo -->
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="App Logo"
+                        android:src="@drawable/quabblelogo"
+                        android:background="@drawable/rounded_corner_bg"
+                        tools:ignore="HardcodedText" />
+
+                    <!-- Search Bar -->
+                   <SearchView
+    android:id="@+id/searchView"
+    android:layout_width="0dp"
+    android:layout_height="40dp"
+    android:layout_weight="1"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/rounded_edittext_bg"
+    android:iconifiedByDefault="false"
+    android:queryHint="Search..."
+    android:padding="10dp"
+    android:textSize="14sp"
+    android:textColor="@color/black"
+    android:textColorHint="@color/blue"
+    tools:ignore="HardcodedText,InefficientWeight" />
+
+
+                    <!-- Cart Icon -->
+                    <ImageView
+                        android:id="@+id/cartIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="Cart"
+                        android:src="@drawable/cart"
+                        android:background="@drawable/rounded_corner_bg"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- Home Header -->
+              <!-- Welcome Message -->
+
+   <TextView
+       android:id="@+id/welcome_textview"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:padding="10dp"
+       android:text="Welcome"
+       android:textColor="@android:color/white"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       tools:ignore="HardcodedText" />
+
+                <!-- Logo and Icons Section -->
+
+                <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:ignore="HardcodedText,ContentDescription,DisableBaselineAlignment">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/moodTrackerIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="Mood Tracker"
+            android:src="@drawable/moodtracker"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/mood_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Mood Tracker"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/productsIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="Products"
+            android:src="@drawable/products"            
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/products_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Products"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="User"
+            android:src="@drawable/user"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/user_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="User"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+             />
+    </LinearLayout>
+</LinearLayout>
+
+
+                <!-- Routines Section -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/rounded_corner_bg"
+                    android:orientation="vertical"
+                    android:padding="16dp" >
+
+                    <ImageView
+                        android:id="@+id/routines"
+                        android:layout_width="238dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="Routines Section"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/routine"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/routines_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/pure_white"
+                        android:gravity="center"
+                        android:text="Routines Section"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- Sections Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <!-- Section 1 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        tools:ignore="DisableBaselineAlignment" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:id="@+id/section1Breathe"
+                                android:layout_width="match_parent"
+                                android:layout_height="73dp"
+                                android:src="@drawable/breathe"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/breathe_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:textColor="@color/pure_white"
+                                android:text="Breathe"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText,DuplicateIds" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables,ExtraText">
+
+                            <ImageView
+                                android:id="@+id/section1Sleep"
+                                android:layout_width="match_parent"
+                                android:layout_height="76dp"
+                                android:src="@drawable/sleeping"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/sleep_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:textColor="@color/pure_white"
+                                android:gravity="center"
+                                android:text="Sleep"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText,DuplicateIds" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables,ExtraText">
+
+                            <ImageView
+                                android:id="@+id/section1Wakeup"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/wakeup"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/wakeup_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/pure_white"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="Wake"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText,DuplicateIds" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Section 2 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        tools:ignore="DisableBaselineAlignment" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables,ExtraText">
+
+                            <ImageView
+                                android:id="@+id/section2Move"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/yoga"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/move_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:textColor="@color/pure_white"
+                                android:text="Move"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText,DuplicateIds" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables,ExtraText">
+
+                            <ImageView
+                                android:id="@+id/section2Motivation"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/motivation"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/motivation_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:textColor="@color/pure_white"
+                                android:text="Motive"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText,DuplicateIds" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables,ExtraText">
+
+                            <ImageView
+                                android:id="@+id/section2Journal"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/journal"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/journal_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="Journal"
+                                android:textColor="@color/pure_white"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText,DuplicateIds" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Bottom Navigation Bar -->
+
+        <LinearLayout
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_corner_bg"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="4"
+            tools:ignore="ObsoleteLayoutParam" >
+
+            <ImageView
+                android:id="@+id/nav_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/home"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/nav_favorites"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/products"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/nav_sounds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/moodtracker"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/user"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

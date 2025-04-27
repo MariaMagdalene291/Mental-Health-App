@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Your Account"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginBottom="24dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="6dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Name Error Message -->
+    <TextView
+        android:id="@+id/nameError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="6dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/emailError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#D32F2F"
+        android:textSize="12sp"
+        tools:ignore="DuplicateIds" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="6dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Password Error Message -->
+    <TextView
+        android:id="@+id/passwordError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+
+    <!-- Confirm Password Input -->
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="6dp"
+        tools:ignore="HardcodedText" />
+
+
+    <!-- Confirm Password Error Message -->
+    <TextView
+        android:id="@+id/confirmPasswordError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="12dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

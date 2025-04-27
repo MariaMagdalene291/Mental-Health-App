@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".SleepActivity">
+
+ <RelativeLayout
+android:id="@+id/rootLayout"  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp">
+
+
+        <!-- Page Header -->
+        <TextView
+            android:id="@+id/pageHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sleep"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:fontFamily="sans-serif-medium"
+            tools:ignore="HardcodedText" />
+
+        <!-- Current Time Display -->
+        <TextView
+            android:id="@+id/currentTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/pageHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <!-- Inspirational Quote -->
+        <TextView
+            android:id="@+id/quoteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/currentTimeTextView"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="8dp"
+            android:paddingBottom="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center" />
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/divider1"
+            android:layout_below="@id/quoteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            />
+
+        <!-- Sleep Duration Input -->
+
+        <TextView
+            android:id="@+id/sleepDurationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider1"
+            android:text="Sleep Duration (hours):"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/sleepDurationInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sleepDurationLabel"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="e.g., 7.5"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <!-- Sleep Quality Rating -->
+
+        <TextView
+            android:id="@+id/sleepQualityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sleepDurationInput"
+            android:text="Rate Your Sleep Quality:"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <RatingBar
+            android:id="@+id/sleepQualityRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sleepQualityLabel"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Soundscapes Label -->
+
+        <TextView
+            android:id="@+id/soundscapesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sleepQualityRating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:text="Choose Your Soundscape:"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <!-- Soundscapes Grid -->
+        <GridView
+            android:id="@+id/soundscapesGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/soundscapesLabel"
+            android:layout_marginBottom="16dp"
+            android:clipToPadding="false"
+            android:horizontalSpacing="12dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="12dp"
+            android:padding="4dp"
+            android:scrollbars="none"
+            android:background="@drawable/grid_background"
+            tools:ignore="NestedScrolling" />
+
+        <!-- Sleep Tips Button -->
+
+        <Button
+            android:id="@+id/sleepTipsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/soundscapesGridView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="View Sleep Tips"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+        <!-- Dark Mode Switch -->
+
+        <Switch
+            android:id="@+id/darkModeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sleepTipsBtn"
+            android:layout_marginTop="8dp"
+            android:text="Enable Dark Mode"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+        <!-- Log Sleep Button -->
+
+        <Button
+            android:id="@+id/logSleepBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/darkModeSwitch"
+            android:layout_marginTop="16dp"
+            android:text="Log Sleep"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+</ScrollView>

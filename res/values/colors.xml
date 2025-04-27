@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="light_gray">#D3D3D3</color> <!-- Light Gray -->
+        <color name="dark_green">#6e8672</color> 
+          <color name="pure_white">#FFFFFF</color>  <!-- White -->
+           <color name="black">#000000</color>
+               <color name="white">#FFFFFF</color>
+                <color name="colorPrimary">#6200EE</color>  
+    <color name="dark_gray">#616161</color>
+    <color name="colorHappy">#FFC107</color>
+    <color name="colorSad">#2196F3</color>
+    <color name="colorNeutral">#9E9E9E</color>
+    <color name="colorAngry">#D32F2F</color>
+    <color name="colorExcited">#4CAF50</color>
+    <color name="colorDepressed">#673AB7</color>
+     <color name="lightBlue">#AEDFF7</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#D32F2F</color>
+<color name="filter_bg">#EDEDED</color>
+<color name="selectedFilter">#A6B091</color>
+<color name="defaultFilter">#EDEDED</color> 
+<color name="background">#F5F5F5</color> <!-- Light mode -->
+<color name="background_dark">#121212</color> <!-- Dark mode -->
+<color name="yellow">#FFF59D</color>
+<color name="blue">#90CAF9</color>
+<color name="pink">#F48FB1</color>
+<color name="purple">#4A148C</color>
+<color name="happy_yellow">#FFFFF176</color>
+<color name="sad_blue">#FF90CAF9</color>
+<color name="angry_orange">#FFFF8A65</color>
+<color name="relaxed_teal">#FFB2DFDB</color>
+<color name="anxious_purple">#FFE1BEE7</color>
+<color name="excited_green">#FFA5D6A7</color>
+<color name="pastel_background">#FFF9F5</color>
+
+
+
+
+
+    
+</resources>

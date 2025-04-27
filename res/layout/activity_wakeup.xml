@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/happy_yellow"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+
+        <!-- Greeting -->
+        <TextView
+            android:id="@+id/wakeupQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Good Morning, Sunshine!"
+            android:textColor="@color/angry_orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Motivational Quote -->
+        <TextView
+            android:id="@+id/motivationalQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="“Each morning we are born again. What we do today matters most.”"
+            android:textColor="@color/angry_orange"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Write Your Goal -->
+        <EditText
+            android:id="@+id/editTextGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Write your goal for today..."
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textColorHint="#B3FFFFFF"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/submitGoalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:text="Submit Goal"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+        <!-- Spinner for Positive Habit Challenge -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Pick a Positive Habit Challenge"
+            android:textColor="@color/angry_orange"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/habitSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Today’s Focus -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Today’s Focus"
+            android:textColor="@color/angry_orange"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/todaysFocus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:text="Stay Hydrated and Stay Positive!"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Switch for Focus Mode -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            
+
+
+
+        </LinearLayout>
+
+        <!-- Habit Tracker with CheckBoxes -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Track Your Habits"
+            android:textColor="@color/angry_orange"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/habit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drink 2L of Water"
+            android:textColor="@color/angry_orange"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/habit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise for 30 mins"
+            android:textColor="@color/angry_orange"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/habit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read for 20 mins"
+            android:textColor="@color/angry_orange"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/habit4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Social Media Till 10AM"
+            android:textColor="@color/angry_orange"
+            tools:ignore="HardcodedText" />
+
+        <!-- Achievement Message -->
+
+        <TextView
+            android:id="@+id/achievementText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Complete all to earn an Achievement!"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="HardcodedText" />
+
+        <!-- Morning Tasks Grid -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Morning Tasks"
+            android:textColor="@color/angry_orange"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <GridView
+            android:id="@+id/morningTasksGrid"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/card_bg"
+            android:horizontalSpacing="12dp"
+            android:numColumns="2"
+            android:verticalSpacing="12dp"
+            tools:ignore="NestedScrolling" />
+
+    </LinearLayout>
+</ScrollView>
